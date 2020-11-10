@@ -1,0 +1,313 @@
+body {
+    .header-aboutus {
+        font-family: AH;
+        width: 100%;
+        position: relative;
+        top: 0;
+        z-index: 3;
+
+        nav {
+            .container-fluid {
+                ul {
+                    display: flex;
+                    margin-top: 30px;
+
+                    li {
+                        color: $black-cl;
+                        font-size: 11px;
+                        display: flex;
+                        margin: 0 15px;
+                        cursor: pointer;
+                        width: 90px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+
+                        &:hover img {
+                            margin-left: 20px;
+                            transition: 0.5s;
+                        }
+                    }
+
+
+                    img {
+                        width: 20px;
+                        margin-left: 10px;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .menu-aboutus {
+        height: 150px;
+        width: 150px;
+        background: #132539;
+        padding: 35px 0;
+        position: absolute;
+        top: 270px;
+        transition: all 0.5s;
+        cursor: pointer;
+
+        .logo {
+            img {
+                width: 40px;
+            }
+
+        }
+
+        .logo-black {
+            position: relative;
+            display: none;
+
+            img {
+                width: 80px;
+                margin-right: 15px;
+                margin-top: -10px;
+
+            }
+
+            &:before {
+                content: "";
+                height: 1px;
+                width: 80px;
+                background: $line-cl;
+                position: absolute;
+                bottom: -10px;
+                right: 15px;
+            }
+        }
+
+        .menu-hover {
+            height: 100%;
+            display: none;
+
+            p {
+                color: $black-cl;
+                font-size: 14px;
+                font-family: A;
+                padding-left: 20px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &:hover {
+            width: 180px;
+            background: #FFF;
+            transition: all 0.5s;
+
+            .logo {
+                display: none;
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+            .logo-black {
+                display: block;
+            }
+
+            .menu-hover {
+                display: block;
+
+            }
+        }
+
+    }
+
+    .banner {
+        .container {
+            h1 {
+                font-size: 44px;
+                font-family: E;
+                color: #73592d;
+                margin-top: 100px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: lighter;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                line-height: 2;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .line {
+        p {
+            font-family: AB;
+            font-size: 14px;
+            text-align: center;
+            position: relative;
+            padding-top: 70px;
+            padding-bottom: 280px;
+            line-height: 1.5;
+            &:before {
+                content: "";
+                background: #585958;
+                width: 1px;
+                height: 230px;
+                position: absolute;
+                right: 50%;
+                top: 150px;
+            }
+        }
+    }
+
+    .aboutus-content {
+        p {
+            font-size: 14px;
+            font-family: AB;
+            line-height: 2;
+            width: 40%;
+        }
+
+        img {
+            padding-top: 110px;
+        }
+    }
+
+    .leadership {
+        text-align: center;
+        font-family: AB;
+        padding-top: 150px;
+
+        p:nth-child(1) {
+            font-size: 14px;
+            line-height: 2;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        p:nth-child(2) {
+            font-size: 16px;
+            margin: 20px 0;
+            font-weight: bolder;
+        }
+
+        p:nth-child(3) {
+            font-size: 14px;
+            margin: 20px 0;
+        }
+
+        img {
+            width: 70%;
+        }
+    }
+}
+
+@include desktop {
+    body {
+        .aboutus-content {
+            p {
+                width: 46%;
+            }
+        }
+
+    }
+}
+
+@include tablet {
+    body {
+        .aboutus-content {
+            p {
+                width: 60%;
+            }
+        }
+
+        .menu-aboutus {
+            display: none;
+        }
+
+        .line {
+            p {
+                padding-bottom: 200px;
+
+                &::before {
+                    top: 50%;
+                    height: 140px;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    body {
+        .aboutus-content {
+            p {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            img {
+                padding-top: 50px;
+            }
+        }
+        .leadership {
+            padding-top: 50px;
+            .container {
+                p:first-child {
+                    width: 90%;
+                }
+                img {
+                    width: 90%;
+                }
+            }
+        }
+        .contact__detail {
+            .container {
+                p{
+                    width: 80%;
+                }
+                .contact__button {
+                    a {
+                        margin: 50px 10px;
+                        padding: 10px 20px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mobile-xxs {
+    body {
+        .banner {
+            .container {
+                p {
+                    margin: 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .line {
+            p {
+                &::before {
+                    top: 55%;
+                }
+            }
+        }
+        .contact__detail {
+            .container {
+                .contact__button {
+                    a {
+                        padding: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,231 @@
+footer {
+	height: 1000px;
+	margin-top: -300px;
+	background: $blue-cl;
+	z-index: 1;
+	color: $white-cl;
+
+	.container {
+		position: relative;
+		height: 100%;
+
+		.slogan {
+			position: absolute;
+			font-family: EI;
+			font-size: 18px;
+			width: 37%;
+			top: 15%;
+			right: 2%;
+			text-align: right;
+			z-index: 1;
+
+			b {
+				color: #b99746;
+			}
+
+		}
+
+		.pen {
+			position: absolute;
+			top: 17%;
+			right: -2%;
+			z-index: 0;
+			width: 15%;
+		}
+
+
+		.contact {
+			position: absolute;
+			bottom: 200px;
+			width: 97%;
+
+			img {
+				width: 90px;
+
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				background: #665d49;
+				height: 2px;
+				width: 45%;
+				top: 10%;
+				left: 0;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				background: #665d49;
+				height: 2px;
+				width: 45%;
+				top: 10%;
+				right: 0;
+			}
+
+			&__info {
+				margin: 30px 0;
+				text-align: center;
+				line-height: 2;
+				text-transform: uppercase;
+			}
+
+			&__back2top {
+				font-family: Arial, Helvetica, sans-serif;
+				color: #aaaaaa;
+				font-size: 15px;
+				position: absolute;
+				transform: rotate(90deg);
+				right: -50px;
+				bottom: -100px;
+				cursor: pointer;
+
+				&::before {
+					content: "";
+					width: 2px;
+					height: 130px;
+					background: #665d49;
+					position: absolute;
+					top: -55px;
+					right: 200px;
+					transform: rotate(90deg);
+					transition: all 0.3s;
+				}
+
+				&:hover::before {
+					right: 230px;
+					transition: all 0.3s;
+				}
+
+			}
+		}
+
+	}
+
+}
+
+@include desktop {
+	footer {
+		.container {
+			.slogan {
+				width: 40%;
+
+			}
+
+			.pen {
+				right: -1%;
+			}
+
+			.contact {
+				&::before {
+					width: 40%;
+					left: 20px;
+				}
+
+				&::after {
+					width: 40%;
+					right: 20px;
+				}
+
+				&__back2top {
+					right: -25px;
+				}
+			}
+		}
+	}
+}
+
+@include tablet {
+	footer {
+		margin-top: -250px;
+
+		.container {
+			.slogan {
+				font-size: 20px;
+				width: 58%;
+				top: 30%;
+				right: 50%;
+				transform: translateX(50%);
+				text-align: center;
+			}
+
+			.pen {
+				top: 42%;
+				right: 50%;
+				transform: translateX(50%);
+			}
+		}
+	}
+}
+
+@include mobile {
+	footer {
+		margin-top: -140px;
+
+		.container {
+			width: 92%;
+
+			.slogan {
+				top: 20%;
+				width: 80%;
+			}
+
+			.pen {
+				position: absolute;
+				top: 35%;
+				right: 50%;
+			}
+
+			.contact {
+				width: 93%;
+
+				&::before {
+					width: 30%;
+					left: 0;
+				}
+
+				&::after {
+					width: 30%;
+					right: 0;
+				}
+
+				&__info {
+					font-size: 15px;
+				}
+
+				&__back2top {
+					right: -55px;
+
+					&::before {
+						height: 100px;
+						right: 160px;
+						top: -40px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mobile-xxs {
+	footer {
+		.container {
+			.contact {
+				&__info {
+					font-size: 11px;
+				}
+
+				&__back2top {
+					right: -35px;
+					font-size: 11px;
+
+					&::before {
+						right: 140px;
+						top: -44px;
+					}
+				}
+			}
+		}
+	}
+}

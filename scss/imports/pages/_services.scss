@@ -1,0 +1,156 @@
+.body-service {
+    .services-banner {
+        h1 {
+            font-size: 32px;
+            font-family: E;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        img {
+            width: 85%;
+        }
+    }
+
+    .services-contact {
+        .container {
+            padding-top: 50px;
+            padding-bottom: 180px;
+            position: relative;
+
+            .services-contact__detail {
+                h3 {
+                    font-size: 26px;
+                    font-family: E;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-family: A;
+                    line-height: 2;
+                    width: 80%;
+                }
+
+            }
+
+            .services-contact__btn {
+                padding-top: 70px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                a {
+                    margin: 0 20px;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 90px;
+                height: 1px;
+                width: 85%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $line-cl;
+            }
+        }
+    }
+
+    .services-work {
+        padding-bottom: 80px;
+
+        h3 {
+            font-size: 26px;
+            font-family: E;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 12px;
+            font-family: A;
+            line-height: 2;
+            width: 50%;
+            padding-bottom: 60px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 85%;
+        }
+    }
+}
+
+@include desktop {
+    .body-service {
+        .menu-aboutus {
+            display: none;
+        }
+
+        .menu-tablet {
+            display: flex;
+        }
+
+        .services-contact {
+            .container {
+                .services-contact__btn {
+                    .btn-white {
+                        margin: 0 10px;
+                        padding: 10px 20px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .body-service {
+        .services-contact {
+            .container {
+                .services-contact__detail {
+                    margin: 0 auto;
+                    p {
+                        width: 100%;
+                    }
+                }
+                .services-contact__btn {
+                    margin: 0 auto;
+                    .btn-white {
+                        margin: 0 auto;
+                        padding: 10px 10px !important;
+                    }
+                }
+            }
+        }
+        .services-work {
+            p {
+                width: 80%;
+            }
+        }
+    }
+}
+@include mobile-xxs {
+    .body-service {
+        .services-banner {
+            h1 {
+                font-size: 27px;
+            }
+        }
+        .services-contact {
+            .container {
+                .services-contact__detail {
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
