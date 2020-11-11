@@ -14,7 +14,6 @@ $(document).ready(function (e) {
     // Carousel content 
     $('.main-carousel').on('change.flickity', function (event, index) {
         let currentIndex = index + 1;
-        console.log(currentIndex);
         if (currentIndex == 1) {
             $('.carousel-content2').removeClass('active');
             $('.carousel-content1').addClass('active');
