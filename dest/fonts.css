@@ -99,8 +99,8 @@
 
 @font-face {
     font-family: 'AH';
-    src: url('/fonts/Avenir\ Heavy.woff2') format('woff2'),
-        url('/fonts/Avenir\ Heavy.woff') format('woff');
+    src: url('/fonts/AvenirHeavy.woff2') format('woff2'),
+        url('/fonts/AvenirHeavy.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
