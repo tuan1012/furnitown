@@ -105,20 +105,3 @@
     font-style: normal;
     font-display: fallback;
 }
-
-@font-face {
-    font-family: 'A';
-    src: url('/fonts/ArialMT.woff2') format('woff2'),
-        url('/fonts/ArialMT.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: fallback;
-}
-@font-face {
-    font-family: 'AB';
-    src: url('/fonts/Arial-BoldMT.woff2') format('woff2'),
-        url('/fonts/Arial-BoldMT.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: fallback;
-}
