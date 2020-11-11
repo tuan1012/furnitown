@@ -12,12 +12,16 @@ header {
                 margin-top: 30px;
 
                 li {
-                    color: $black-cl;
-                    font-size: 11px;
                     display: flex;
                     margin: 0 15px;
                     cursor: pointer;
                     width: 90px;
+                    a {
+                        color: $black-cl;
+                        font-size: 11px;
+                        font-family: arial;
+                        font-weight: bolder;
+                    }
 
                     img {
                         width: 20px;
