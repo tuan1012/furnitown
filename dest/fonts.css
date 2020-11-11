@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'EB';
-    src: url('/fonts/ElleBaskerville-Bold.woff2') format('woff2'),
-        url('/fonts/ElleBaskerville-Bold.woff') format('woff');
+    src: url('../fonts/ElleBaskerville-Bold.woff2') format('woff2'),
+        url('../fonts/ElleBaskerville-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: 'EBI';
-    src: url('/fonts/ElleBaskerville-BoldItalic.woff2') format('woff2'),
-        url('/fonts/ElleBaskerville-BoldItalic.woff') format('woff');
+    src: url('../fonts/ElleBaskerville-BoldItalic.woff2') format('woff2'),
+        url('../fonts/ElleBaskerville-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
@@ -63,8 +63,8 @@
 
 @font-face {
     font-family: 'EI';
-    src: url('/fonts/ElleBaskerville-Italic.woff2') format('woff2'),
-        url('/fonts/ElleBaskerville-Italic.woff') format('woff');
+    src: url('../fonts/ElleBaskerville-Italic.woff2') format('woff2'),
+        url('../fonts/ElleBaskerville-Italic.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
@@ -72,8 +72,8 @@
 
 @font-face {
     font-family: 'ESB';
-    src: url('/fonts/ElleBaskerville-SemiBold.woff2') format('woff2'),
-        url('/fonts/ElleBaskerville-SemiBold.woff') format('woff');
+    src: url('../fonts/ElleBaskerville-SemiBold.woff2') format('woff2'),
+        url('../fonts/ElleBaskerville-SemiBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
@@ -81,8 +81,8 @@
 
 @font-face {
     font-family: 'ESBI';
-    src: url('/fonts/ElleBaskerville-SemiBoldItalic.woff2') format('woff2'),
-        url('/fonts/ElleBaskerville-SemiBoldItalic.woff') format('woff');
+    src: url('../fonts/ElleBaskerville-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/ElleBaskerville-SemiBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
@@ -90,8 +90,8 @@
 
 @font-face {
     font-family: 'E';
-    src: url('/fonts/ElleBaskerville.woff2') format('woff2'),
-        url('/fonts/ElleBaskerville.woff') format('woff');
+    src: url('../fonts/ElleBaskerville.woff2') format('woff2'),
+        url('../fonts/ElleBaskerville.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
