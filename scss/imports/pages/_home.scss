@@ -170,9 +170,7 @@ body {
                             top: 10px;
                             left: 11px;
                             z-index: 1;
-                            animation-name: drop;
-                            animation-duration: 1.5s;
-                            animation-iteration-count: infinite;
+                            animation: drop 1.5s infinite ;
 
                             @keyframes drop {
                                 from {
