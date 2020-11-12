@@ -1083,7 +1083,7 @@ body {
                 .container {
                     .row {
                         .product__workroom {
-                            p {
+                            p:first-child {
                                 display: none;
                             }
                         }
