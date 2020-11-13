@@ -7,7 +7,7 @@ $(document).ready(function (e) {
         contain: true,
         wrapAround: true,
         friction: 0.8,
-        autoPlay: 6000,
+        autoPlay: 3000,
         wrapAround: true,
     });
 
