@@ -170,7 +170,7 @@ body {
                             top: 10px;
                             left: 11px;
                             z-index: 1;
-                            animation: drop 1.5s infinite ;
+                            animation: drop 1.5s infinite;
 
                             @keyframes drop {
                                 from {
@@ -413,7 +413,7 @@ body {
 
                 .product__workroom {
 
-                    p:first-child {
+                    &-content {
                         width: 65%;
                         font-family: A;
                         font-size: 12px;
@@ -667,6 +667,7 @@ body {
         background: #1f2423;
         z-index: 6;
         transition: all 0.3s;
+
         &__header {
             display: flex;
             justify-content: space-between;
@@ -1081,13 +1082,12 @@ body {
                 margin-top: 50px;
 
                 .container {
-                    .row {
-                        .product__workroom {
-                            p:first-child {
-                                display: none;
-                            }
+                    .product__workroom {
+                        &-content {
+                            display: none;
                         }
                     }
+
                 }
             }
         }
