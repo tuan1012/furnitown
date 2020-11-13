@@ -1,6 +1,8 @@
 $('.lazy-load').fadeOut(1500);
 $(document).ready(function (e) {
-    $('.carousel-content1').addClass('active');
+    $('.carousel-content1 h1').slideDown(1000);
+    $('.carousel-content1 span').slideUp(1500);
+    $('.carousel-content2 span').slideDown(1000);
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
@@ -15,11 +17,17 @@ $(document).ready(function (e) {
     $('.main-carousel').on('change.flickity', function (event, index) {
         let currentIndex = index + 1;
         if (currentIndex == 1) {
-            $('.carousel-content2').removeClass('active');
-            $('.carousel-content1').addClass('active');
+            $('.carousel-content2 h1').slideUp(100);
+            $('.carousel-content1 h1').slideDown(1000);
+            $('.carousel-content1 span').slideUp(50);
+            $('.carousel-content2 span').slideDown(500);
+
         } else {
-            $('.carousel-content1').removeClass('active');
-            $('.carousel-content2').addClass('active');
+            $('.carousel-content1 h1').slideUp(100);
+            $('.carousel-content2 h1').slideDown(1000);
+            $('.carousel-content2 span').slideUp(50);
+            $('.carousel-content1 span').slideDown(500);
+
         }
 
 
@@ -80,14 +88,14 @@ $(document).ready(function (e) {
     })
 
     // Menu mobile 
-    $('.menu-mobile__hamburger').on('click',function(){
+    $('.menu-mobile__hamburger').on('click', function () {
         $('.menu-mobile__fullscreen').css({
             'height': '100vh',
             'visibility': 'visible',
             'opacity': '1',
         });
     })
-    $('.menu-mobile__fullscreen .close').on('click',function(){
+    $('.menu-mobile__fullscreen .close').on('click', function () {
         $('.menu-mobile__fullscreen').css({
             'height': '0',
             'visibility': 'hidden',
@@ -105,29 +113,35 @@ $(document).ready(function (e) {
         wrapAround: true,
         fullscreen: true,
     });
-    
+
     // Send button
-    $('.send-btn').on('click',function(){
+    $('.send-btn').on('click', function () {
         alert('Gửi thông tin thành công \nCám ơn quý khách !')
     })
 
     // Button hover 
-    $('.btn-white, .btn-black').on('mouseenter', function(e){
+    $('.btn-white, .btn-black').on('mouseenter', function (e) {
         x = e.pageX - $(this).offset().left;
         y = e.pageY - $(this).offset().top;
-        $(this).find('span').css({top:y , left:x})
+        $(this).find('span').css({
+            top: y,
+            left: x
+        })
     });
-    $('.btn-white, .btn-black').on('mouseout', function(e){
+    $('.btn-white, .btn-black').on('mouseout', function (e) {
         x = e.pageX - $(this).offset().left;
         y = e.pageY - $(this).offset().top;
-        $(this).find('span').css({top:y , left:x})
+        $(this).find('span').css({
+            top: y,
+            left: x
+        })
     });
 
     // Page number 
-    $('.news__page ul li, .projects__page ul li').on('mouseenter',function(){
+    $('.news__page ul li, .projects__page ul li').on('mouseenter', function () {
         $(this).toggleClass('active');
     });
-    $('.news__page ul li, .projects__page ul li').on('mouseout',function(){
+    $('.news__page ul li, .projects__page ul li').on('mouseout', function () {
         $(this).toggleClass('active');
     })
 })
