@@ -252,11 +252,12 @@
                     }
                 }
                 .news__list {
-                &:before {
-                    display : none;
+                    &:before {
+                        display : none;
                     }
                     &:after {
-                    display: none}
+                        display: none
+                    }
                 }
             }
         }
