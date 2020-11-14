@@ -251,6 +251,13 @@
                         top: 80px;
                     }
                 }
+                .news__list {
+                &:before {
+                    display : none;
+                    }
+                    &:after {
+                    display: none}
+                }
             }
         }
     }
