@@ -1194,7 +1194,6 @@ body {
 
         }
 
-
     }
 }
 
@@ -1233,6 +1232,9 @@ body {
         }
 
         .menu-mobile__fullscreen {
+            .menu-fullscreen__header {
+                padding: 40px;
+            }
             .menu-fullscreen__main {
                 .menu-fullscreen__left {
                     padding-left: 30px;
