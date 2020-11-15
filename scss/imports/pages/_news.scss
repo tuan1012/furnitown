@@ -260,6 +260,14 @@
                         display: none;
                     }
                 }
+                .news__list {
+                    &:before {
+                        display : none;
+                    }
+                    &:after {
+                        display: none
+                    }
+                }
             }
         }
     }
