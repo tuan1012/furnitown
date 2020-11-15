@@ -19,5 +19,8 @@
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "load-grunt-tasks": "^5.1.0"
+  },
+  "dependencies": {
+    "locomotive-scroll": "^3.6.1"
   }
 }
