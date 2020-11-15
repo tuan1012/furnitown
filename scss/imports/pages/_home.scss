@@ -1094,6 +1094,24 @@ body {
                             display: none;
                         }
                     }
+                    .overlay {
+                        .overlay-content {
+                            img {
+                                width: 20px;
+                            }
+                            p {
+                                font-size: 10px;
+                            }
+                        }
+                        .wrap-btn {
+                            img {
+                                width: 20px;
+                            }
+                            a {
+                                font-size: 8px;
+                            }
+                        }
+                    }
 
                 }
             }
