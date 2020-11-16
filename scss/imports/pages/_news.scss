@@ -63,12 +63,13 @@
                         cursor: pointer;
                         padding-top: 20px;
 
-                        img {
+                        svg {
                             position: relative;
                             width: 20px;
                             margin: auto 0;
                             transition: all 0.3s;
                             left: 0;
+                            transition: 0.5s;
                         }
 
                         span {
@@ -93,6 +94,12 @@
                         span {
                             color: $white-cl;
                         }
+                        svg {
+                            polygon {
+                                fill: $white-cl;
+                                transition: 0.5s;
+                            }
+                        }
 
                         &:hover {
                             span {
@@ -100,8 +107,8 @@
                                 transition: all 0.3s;
                             }
 
-                            img {
-                                left: 90px;
+                            svg {
+                                left: 80px;
                                 transition: all 0.3s;
                             }
                         }

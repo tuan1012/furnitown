@@ -1,9 +1,12 @@
 $('.lazy-load').fadeOut(1500);
+
 $(document).ready(function (e) {
     $('.carousel-content1 h1').slideDown(1200);
     $('.carousel-content1 span').slideDown(1500);
-  
-   
+    $(window).on('load', function () {
+        $('.svg').svgToInline()
+    });
+
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
