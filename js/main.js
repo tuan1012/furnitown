@@ -6,7 +6,9 @@ $(document).ready(function (e) {
     $(window).on('load', function () {
         $('.svg').svgToInline()
     });
-
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
