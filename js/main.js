@@ -2,10 +2,8 @@ $('.lazy-load').fadeOut(1500);
 $(document).ready(function (e) {
     $('.carousel-content1 h1').slideDown(1200);
     $('.carousel-content1 span').slideDown(1500);
-    // Locomotive JS
-    import LocomotiveScroll from './lib';
-
-    const scroll = new LocomotiveScroll();
+  
+   
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
