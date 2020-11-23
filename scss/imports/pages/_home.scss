@@ -45,9 +45,11 @@ body {
                     .carousel-cell {
                         height: 100%;
                         width: 100%;
-
-                        img {
-                            object-fit: fill;
+                        &:first-child {
+                            background: url(/img/carousel1.png) center;
+                        }
+                        &:last-child {
+                            background: url(/img/41635793_xl.jpg) center;
                         }
                     }
 
@@ -421,9 +423,9 @@ body {
                 .product__workroom {
 
                     &-content {
-                        width: 65%;
+                        width: 70%;
                         font-family: A;
-                        font-size: 12px;
+                        font-size: 14px;
                         line-height: 3;
 
                         b {
@@ -1056,7 +1058,12 @@ body {
 
                 .container-fluid {
                     .main-carousel {
-                       
+                        .carousel-cell {
+                            &:first-child {
+                                background: url(/img/carousel-mobile.jpg) center;
+                               
+                            }
+                        }
 
                         .flickity-prev-next-button {
                             width: 30px;

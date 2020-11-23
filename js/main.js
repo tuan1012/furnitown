@@ -1,14 +1,16 @@
 $('.lazy-load').fadeOut(1500);
 
 $(document).ready(function (e) {
+    
     $('.carousel-content1 h1').slideDown(1200);
     $('.carousel-content1 span').slideDown(1500);
+    
+    // Replace svg
     $(window).on('load', function () {
         $('.svg').svgToInline()
     });
-    (function () {
-        var scroll = new LocomotiveScroll();
-    })();
+    
+    // Flickity carousel
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
